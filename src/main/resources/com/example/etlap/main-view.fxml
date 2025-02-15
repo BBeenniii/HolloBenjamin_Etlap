@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.etlap.MainController">
+    <center>
+        <TableView fx:id="etlapTable">
+            <columns>
+                <TableColumn text="Név" fx:id="nameColumn"/>
+                <TableColumn text="Kategória" fx:id="categoryColumn"/>
+                <TableColumn text="Ár" fx:id="priceColumn"/>
+            </columns>
+        </TableView>
+    </center>
+    <bottom>
+        <HBox spacing="10" alignment="center">
+            <Button text="Új étel hozzáadása" fx:id="addButton"/>
+            <Button text="Törlés" fx:id="deleteButton"/>
+            <Button text="Áremelés" fx:id="increasePriceButton" onAction="#increasePrice"/>
+        </HBox>
+    </bottom>
+</BorderPane>

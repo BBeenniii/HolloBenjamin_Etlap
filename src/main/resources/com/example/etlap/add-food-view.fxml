@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER"
+      xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.etlap.AddFoodController">
+
+    <Label text="Új étel hozzáadása" style="-fx-font-size: 16px;"/>
+
+    <TextField fx:id="nameField" promptText="Étel neve"/>
+
+    <TextField fx:id="categoryField" promptText="Kategória"/>
+
+    <TextField fx:id="priceField" promptText="Ár (Ft)"/>
+
+    <Button text="Hozzáadás" fx:id="addButton"/>
+</VBox>
